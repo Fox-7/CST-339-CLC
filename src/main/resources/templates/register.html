@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<div layout:fragment="content">
+
+
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/">Phoenix Automotive</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="/">Home</a></li>
+		</ul>
+		<div class="collapse navbar-collapse"
+			id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="#">Services</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<title>Registration Form</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/Style2.css" media="screen">
+
+</head>
+<center>
+<form action="@{doRegister}" method="post">
+<body class="registration">
+		<h2>User Registration Form</h2>
+
+		<!-- Form used to get the user information for registration -->
+		
+		
+		<span
+			style="display: inline-block; width: 100px; padding-bottom: 5px;">First Name: 
+		</span> <input type="text" name="First_Name"><br> 
+		
+		<span
+			style="display: inline-block; width: 100px; padding-bottom: 5px;">Last Name: 
+		</span> <input type="text" name="Last_Name"><br>
+		
+		<span
+			style="display: inline-block; width: 100px; padding-bottom: 5px;">Username:
+		</span> <input type="text" name="Username"><br> 
+		
+		<span
+			style="display: inline-block; width: 100px; padding-bottom: 5px;">Password:
+		</span> <input type="password" name="Password"><br>  
+		
+		<span
+			style="display: inline-block; width: 100px; padding-bottom: 5px;">Email:
+		</span> <input type="text" name="Email"><br> 
+		
+		<span
+			style="display: inline-block; width: 100px; padding-bottom: 5px;">Phone Number:
+		</span> <input type="text" name="Phone_Number"><br> 
+
+		<!--<input type="submit" value="Submit"><br>-->
+				<input type="button" value="Submit">
+
+		<!-- Link to Main Menu -->
+		<br> <a href="/">Main Menu</a>
+
+	</form>
+</body>
+</center>
+</html>
